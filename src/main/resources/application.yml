@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/project02?useSSL=false
+    username: root
+    password: lin123
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: lin123
+    timeout: 0
+    database: 0
+
+security:
+  basic:
+    enabled: false
+
+logging:
+  level:
+    lhonl.dao: debug
+    
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+  
